@@ -1,0 +1,208 @@
+---
+title: 訂購資訊
+layout: ./app/orderLayout.ejs
+engine: ejs
+current: orderDetails
+---
+
+<div class="container">
+  <div class="row justify-content-between mh-100">
+    <div class="col-md-8">
+      <div class="row timeline-section">
+        <div class="col-3">
+          <div class="timeline-pointer done">
+            <p class="timeline-pointer-status">確認訂單</p>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="timeline-pointer done">
+            <p class="timeline-pointer-status active">訂購資訊</p>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="timeline-pointer">
+            <p class="timeline-pointer-status">付款資訊</p>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="timeline-pointer">
+            <p class="timeline-pointer-status">完成訂購</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none">
+        <h5 class="text-black fw-bold mb-5">訂購人資訊</h5>
+        <form class="buyerDetails">
+          <div class="mb-3">
+            <label for="customerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="customerEmail" placeholder="example@gmail.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="customerName" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="customerName" placeholder="請輸入姓名" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="cutstomerPhone" class="form-label">連絡電話</label>
+            <input type="tel" class="form-control" id="cutstomerPhone" placeholder="請輸入電話" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="customerCoupon" class="form-label">優惠碼</label>
+            <input type="text" class="form-control" id="customerCoupon" aria-describedby="couponHint" value="TG87526">
+            <div id="couponHint" class="form-text d-flex justify-content-end fs-6"><small class="text-secondary">優惠碼已生效</small></div>
+          </div>
+        </form>
+        <p class="d-flex justify-content-between mb-1 text-black fw-bold">小計<span class="fw-light">NT$1050</span></p>
+        <p class="d-flex justify-content-between mb-1 text-black fw-bold">折扣<span class="fw-light">-NT$50</span></p>
+        <p class="fs-5 d-flex justify-content-between mb-3 text-black fw-bold">總金額<span>NT$1000</span></p>
+      </div>
+
+      <div class="card border-0 text-black mb-5">
+        <div class="row g-0 align-items-center justify-content-between">
+          <div class="col-md-2 col-4 me-4 me-md-8">
+            <img src="./assets/images/Exhibinection1.jpg" style="width: 100%; height:85px;">
+          </div>
+
+          <div class="col-md-3 col">
+            <div class="card-body p-0">
+              <h5 class="card-title d-none d-md-block fw-bold fs-6">2020 台味設計展</h5>
+              <div class="d-flex d-md-none justify-content-between">
+                <h5 class="card-title fw-bold fs-6">2020 台味設計展</h5>
+              </div>
+              <p class="card-text dateTime mb-1">01 JUN — 31 OCT</p>
+              <p class="card-text d-none d-md-block m-0 text-bodyColor">全票</p>
+              <div class="d-flex d-md-none justify-content-between">
+                <p class="card-text m-0 text-bodyColor">全票<span class="ms-1 fw-bold text-black">1</span></p>
+                <p class="card-text fs-5 fw-bold">NT$350</p>
+              </div>
+            </div>
+            </div>
+
+          <div class="col-md-3 d-none d-md-flex justify-content-center">
+            <p class="card-text fs-5 fw-bold">NT$350</p>
+          </div>
+
+          <div class="col-md-2 d-none d-md-block">
+            <p class="fs-5 fw-bold my-1 my-md-0 mx-md-3">1</p>
+          </div>
+
+          <div class="col-md-1 d-none d-md-block"></div>
+        </div>
+      </div>
+
+      <div class="card border-0 text-black mb-5">
+        <div class="row g-0 align-items-center justify-content-between">
+          <div class="col-md-2 col-4 me-4 me-md-8">
+            <img src="./assets/images/Exhibinection2.jpg" style="width: 100%; height:85px;">
+          </div>
+
+          <div class="col-md-3 col">
+            <div class="card-body p-0">
+              <h5 class="card-title d-none d-md-block fw-bold fs-6">No.22 線上設計展</h5>
+              <div class="d-flex d-md-none justify-content-between">
+                <h5 class="card-title fw-bold fs-6">No.22 線上設計展</h5>
+              </div>
+              <p class="card-text dateTime mb-1">01 JUN — 31 OCT</p>
+              <p class="card-text d-none d-md-block m-0 text-bodyColor">全票</p>
+              <div class="d-flex d-md-none justify-content-between">
+                <p class="card-text m-0 text-bodyColor">全票<span class="ms-1 fw-bold text-black">1</span></p>
+                <p class="card-text fs-5 fw-bold">NT$350</p>
+              </div>
+            </div>
+            </div>
+
+          <div class="col-md-3 d-none d-md-flex justify-content-center">
+            <p class="card-text fs-5 fw-bold">NT$350</p>
+          </div>
+
+          <div class="col-md-2 d-none d-md-block">
+            <p class="fs-5 fw-bold my-1 my-md-0 mx-md-3">1</p>
+          </div>
+
+          <div class="col-md-1 d-none d-md-block"></div>
+        </div>
+      </div>
+
+      <div class="card border-0 text-black">
+        <div class="row g-0 align-items-center justify-content-between">
+          <div class="col-md-2 col-4 me-4 me-md-8">
+            <img src="./assets/images/Exhibinection3.jpg" style="width: 100%; height:85px;">
+          </div>
+
+          <div class="col-md-3 col">
+            <div class="card-body p-0">
+              <h5 class="card-title d-none d-md-block fw-bold fs-6">高雄設計節</h5>
+              <div class="d-flex d-md-none justify-content-between">
+                <h5 class="card-title fw-bold fs-6">高雄設計節</h5>
+              </div>
+              <p class="card-text dateTime mb-1">01 JUN — 31 OCT</p>
+              <p class="card-text d-none d-md-block m-0 text-bodyColor">全票</p>
+              <div class="d-flex d-md-none justify-content-between">
+                <p class="card-text m-0 text-bodyColor">全票<span class="ms-1 fw-bold text-black">1</span></p>
+                <p class="card-text fs-5 fw-bold">NT$350</p>
+              </div>
+            </div>
+            </div>
+
+          <div class="col-md-3 d-none d-md-flex justify-content-center">
+            <p class="card-text fs-5 fw-bold">NT$350</p>
+          </div>
+
+
+          <div class="col-md-2 d-none d-md-block">
+            <p class="fs-5 fw-bold my-1 my-md-0 mx-md-3">1</p>
+          </div>
+
+          <div class="col-md-1 d-none d-md-block"></div>
+        </div>
+      </div>
+      <a href="javascript:history.back()" class="d-none d-md-inline btn text-secondary border border-secondary px-4 py-2" style="position: absolute; bottom:60px;">返回</a>
+    </div>
+
+    <div class="order-Right-Content col-md-4 d-none d-md-flex flex-column justify-content-end">
+      <h5 class="text-black fw-bold mb-5">訂購人資訊</h5>
+      <form class="buyerDetails">
+        <div class="mb-3">
+          <label for="customerEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="customerEmail" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="customerName" class="form-label">姓名</label>
+          <input type="text" class="form-control" id="customerName" placeholder="請輸入姓名" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="cutstomerPhone" class="form-label">連絡電話</label>
+          <input type="tel" class="form-control" id="cutstomerPhone" placeholder="請輸入電話" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="customerCoupon" class="form-label">優惠碼</label>
+          <input type="text" class="form-control" id="customerCoupon" aria-describedby="couponHint" value="TG87526">
+          <div id="couponHint" class="form-text d-flex justify-content-end fs-6"><small class="text-secondary">優惠碼已生效</small></div>
+        </div>
+      </form>
+      <p class="d-flex justify-content-between mb-1 text-black fw-bold">小計<span class="fw-light">NT$1050</span></p>
+      <p class="d-flex justify-content-between mb-1 text-black fw-bold">折扣<span class="fw-light">-NT$50</span></p>
+      <p class="fs-5 d-flex justify-content-between mb-3 text-black fw-bold">總金額<span>NT$1000</span></p>
+      <a href="orderPayment.html" class="btn btn-primary py-2">下一步</a>
+    </div>
+
+    <div class="buyerDetails-Button row d-flex d-md-none">
+      <div class="col-6 d-flex flex-column justify-content-center">
+        <a href="javascript:history.back()" class="btn border border-secondary text-secondary py-2">返回</a>
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-center">
+        <a href="orderPayment.html" class="btn btn-primary py-2">下一步</a>
+      </div>
+    </div>
+  </div>
+
+</div>

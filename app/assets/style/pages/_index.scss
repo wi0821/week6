@@ -1,0 +1,110 @@
+.expo {
+    &-Cover {
+        background: url(../images/ModernExhibinectionTaipei.jpg) no-repeat center center;
+        background-size: cover;
+        height: 480px;
+        width: 100%;
+        padding-bottom: 80px;
+
+        button {
+            padding: 10px 48px;
+        }
+        @include md() {
+            padding-bottom: 0;
+        }
+    }
+
+    &-Popular {
+        &-Card {
+            border: none;
+            background: #EFEFEF;
+            &-Image {
+                padding: 0 15px;
+                @include sectionPadding(24px,0);
+                img{
+                    max-width: 100%;
+                    height: 345px;
+                }
+
+                @include md() {
+                    padding: 0;
+                    img {
+                        object-fit: contain;
+                        height: 350px;
+                        padding-left: 15px;
+                    }
+                }
+                @include xl() {
+                    img {
+                        object-fit: cover;
+                        padding: 0;
+                    }
+                }
+            }
+
+        }
+
+        &-Content {
+            background: #EFEFEF;
+            color: #000;
+            font-weight: 500;
+            padding: 0 15px;
+            @include sectionPadding(8px,24px);
+
+            p {
+                margin: 0;
+            }
+
+            button {
+                padding: 10px 16px;
+            }
+
+            &-Left {
+                max-width: 100%;
+                @include md() {
+                    max-width: 80%;
+                }
+            }
+
+            &-Right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                a {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+            @include md() {
+                padding: 40px 24px;
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &-Live {
+        &-Card {
+            position: relative;
+            background: url(../images/liveCover.png) no-repeat center center;
+            background-size: cover;
+            height: 482px;
+        }
+        &-Left{
+            color: #fff;
+            padding: 40px 24px;
+            background: #190014CC;
+            height: 482px;
+            span {
+                font-weight: 500;
+            }
+
+            button {
+                padding: 10px 38px;
+            }
+        }
+
+    }
+}

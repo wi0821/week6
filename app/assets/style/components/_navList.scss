@@ -1,0 +1,18 @@
+.nav-List {
+    padding: 14px 0;
+    ul {
+        margin: 0 auto;
+        max-width: 730px;
+        align-items: center;
+        li a{
+            padding-bottom: 3px;
+            &:hover {
+                border-bottom: 1px solid #E31277;
+            }
+
+            &.active {
+                border-bottom: 1px solid #E31277;
+            }
+        }
+    }
+}
