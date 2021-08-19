@@ -13873,6 +13873,7 @@ img {
 
 .nav-List {
   padding: 14px 0;
+  border-bottom: 1px solid #707070;
 }
 
 .nav-List ul {
@@ -14138,6 +14139,93 @@ img {
     padding: 0;
     padding-top: 80px;
     padding-bottom: 52px;
+  }
+}
+
+.design-Taiwan-Section {
+  margin-top: 44px;
+}
+
+.design-Taiwan-Intro {
+  color: #000;
+  max-width: 100%;
+}
+
+.design-Taiwan-Intro img {
+  width: 100%;
+  height: 256px;
+}
+
+.design-Taiwan-Intro h5, .design-Taiwan-Intro .h5 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.design-Taiwan-Control {
+  margin-bottom: 40px;
+}
+
+.design-Taiwan-Control-Bottom button {
+  padding: 10px 50px;
+}
+
+.design-Taiwan-Control-Ticket-Num {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.design-Taiwan-Control-Ticket-Price {
+  margin-bottom: 40px;
+}
+
+.design-Taiwan-Control-Ticket-Price li {
+  padding-bottom: 4px;
+}
+
+.design-Taiwan-Control-Ticket-Price li.active {
+  border-bottom: 1px solid #E31277;
+}
+
+.design-Taiwan-Background {
+  margin: 0;
+  margin-bottom: 16px;
+  background: url(../images/CelebrationArt1.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.design-Taiwan-Content img {
+  max-width: 100%;
+  height: 560px;
+}
+
+.design-Taiwan-Content p:first-of-type {
+  text-indent: 32px;
+}
+
+@media (min-width: 768px) {
+  .design-Taiwan-Section {
+    margin-top: 80px;
+  }
+  .design-Taiwan-Intro {
+    max-width: 540px;
+  }
+  .design-Taiwan-Intro img {
+    width: 540px;
+  }
+  .design-Taiwan-Control-Bottom button {
+    padding: 10px 96px;
+  }
+  .design-Taiwan-Control-Ticket-Num {
+    border-right: 1px solid #000;
+    margin: 0;
+  }
+  .design-Taiwan-Control-Ticket-Price {
+    margin: 0;
+  }
+  .design-Taiwan-Background {
+    margin-bottom: 32px;
   }
 }
 
