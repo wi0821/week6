@@ -1,0 +1,104 @@
+.design-Taiwan {
+    &-Section {
+        margin-top: 44px;
+    }
+
+    &-Intro {
+        color: #000;
+        max-width:100%;
+        img {
+            width: 100%;
+            height: 256px;
+        }
+
+        h5 {
+            @include sectionMargin(8px,4px);
+        }
+    }
+
+    &-Control {
+        margin-bottom: 40px;
+
+        &-Bottom {
+            button {
+                padding: 10px 50px;
+            }
+        }
+
+        &-Ticket {
+            &-Num  {
+                border: none;
+                margin-bottom: 40px;
+            }
+
+            &-Price {
+                margin-bottom: 40px;
+                li {
+                    padding-bottom: 4px;
+                    &.active {
+                        border-bottom: 1px solid $primary;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &-Background {
+        margin: 0;
+        margin-bottom: 16px;
+        background: url(../images/CelebrationArt1.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+    }
+
+    &-Content {
+        img {
+            max-width: 100%;
+            height: 560px;
+        }
+
+        p:first-of-type {
+            text-indent: 32px;
+        }
+
+    }
+
+    @include md() {
+        &-Section {
+            margin-top: 80px;
+        }
+
+        &-Intro {
+            max-width: 540px;
+            img {
+                width: 540px;
+            }
+        }
+
+        &-Control {
+            &-Bottom {
+                button {
+                    padding: 10px 96px;
+                }
+            }
+
+            &-Ticket {
+                &-Num  {
+                    border-right: 1px solid #000;
+                    margin: 0;
+                }
+
+                &-Price {
+                    margin: 0;
+                }
+            }
+        }
+
+        &-Background {
+            margin-bottom: 32px;
+        }
+
+    }
+}
